@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f3f3f3;
+}
+
+.btn {
+  @apply w-full rounded-md border-2 bg-sky-600 border-sky-600 leading-10 font-semibold text-white hover:bg-sky-700 hover:border-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-sky-500 transition delay-100 ease-linear text-sm shadow-tiny select-none;
+}
+
+.btn:disabled {
+  @apply hover:bg-sky-600 hover:border-sky-600 cursor-not-allowed opacity-60;
+}
+
+.btn.loading {
+  @apply text-[0] leading-[0] align-top;
+}
+
+.btn.loading:before {
+  content: "";
+  @apply animate-spin w-5 h-5 rounded-full border-2 border-r-white border-transparent my-2.5 mx-auto block;
+}
+
+.input {
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  outline: 0 !important;
+  min-height: 38px;
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 100ms;
+}
+
+.input:focus {
+  border-color: #2684ff;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 0 0 1px #2684ff;
+}
+
+.input:disabled {
+  background-color: #f2f2f2;
+  border-color: hsl(0, 0%, 90%);
+}
+
+.input::placeholder {
+  color: hsl(0, 0%, 50%);
+}

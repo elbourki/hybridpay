@@ -1,0 +1,393 @@
+{
+  "mainnet": [
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "chain_id": 1,
+      "provider_params": [
+        {
+          "chainId": "0x1",
+          "chainName": "Ethereum",
+          "rpcUrls": [
+            "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+            "https://rpc.ankr.com/eth"
+          ],
+          "nativeCurrency": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://etherscan.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/ethereum.svg"
+    },
+    {
+      "id": "binance",
+      "name": "BNB Chain",
+      "chain_id": 56,
+      "provider_params": [
+        {
+          "chainId": "0x38",
+          "chainName": "BNB Chain",
+          "rpcUrls": [
+            "https://rpc.ankr.com/bsc",
+            "https://bscrpc.com"
+          ],
+          "nativeCurrency": {
+            "name": "BNB",
+            "symbol": "BNB",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://bscscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/binance.svg"
+    },
+    {
+      "id": "polygon",
+      "name": "Polygon",
+      "chain_id": 137,
+      "provider_params": [
+        {
+          "chainId": "0x89",
+          "chainName": "Polygon",
+          "rpcUrls": [
+            "https://rpc.ankr.com/polygon",
+            "https://matic-mainnet.chainstacklabs.com",
+            "https://polygon-rpc.com"
+          ],
+          "nativeCurrency": {
+            "name": "Polygon",
+            "symbol": "MATIC",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://polygonscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/polygon.svg"
+    },
+    {
+      "id": "avalanche",
+      "name": "Avalanche",
+      "chain_id": 43114,
+      "provider_params": [
+        {
+          "chainId": "0xa86a",
+          "chainName": "Avalanche",
+          "rpcUrls": [
+            "https://rpc.ankr.com/avalanche",
+            "https://api.avax.network/ext/bc/C/rpc"
+          ],
+          "nativeCurrency": {
+            "name": "Avalanche",
+            "symbol": "AVAX",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://snowtrace.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/avalanche.svg"
+    },
+    {
+      "id": "fantom",
+      "name": "Fantom",
+      "chain_id": 250,
+      "provider_params": [
+        {
+          "chainId": "0xfa",
+          "chainName": "Fantom",
+          "rpcUrls": [
+            "https://rpc.ankr.com/fantom",
+            "https://rpc.ftm.tools",
+            "https://rpcapi.fantom.network"
+          ],
+          "nativeCurrency": {
+            "name": "Fantom",
+            "symbol": "FTM",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://ftmscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/fantom.svg"
+    },
+    {
+      "id": "moonbeam",
+      "name": "Moonbeam",
+      "chain_id": 1284,
+      "provider_params": [
+        {
+          "chainId": "0x504",
+          "chainName": "Moonbeam",
+          "rpcUrls": [
+            "https://rpc.ankr.com/moonbeam",
+            "https://rpc.api.moonbeam.network"
+          ],
+          "nativeCurrency": {
+            "name": "Glimmer",
+            "symbol": "GLMR",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://moonscan.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/moonbeam.svg"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "chain_id": 1313161554,
+      "provider_params": [
+        {
+          "chainId": "0x4e454152",
+          "chainName": "Aurora",
+          "rpcUrls": [
+            "https://mainnet.aurora.dev"
+          ],
+          "nativeCurrency": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://aurorascan.dev"
+          ]
+        }
+      ],
+      "image": "/images/chains/aurora.svg"
+    }
+  ],
+  "testnet": [
+    {
+      "id": "ethereum",
+      "name": "Ethereum Goerli",
+      "chain_id": 5,
+      "provider_params": [
+        {
+          "chainId": "0x5",
+          "chainName": "Ethereum Goerli",
+          "rpcUrls": [
+            "https://rpc.ankr.com/eth_goerli",
+            "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+          ],
+          "nativeCurrency": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://goerli.etherscan.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/ethereum.svg"
+    },
+    {
+      "id": "binance",
+      "name": "BNB Chain",
+      "chain_id": 97,
+      "provider_params": [
+        {
+          "chainId": "0x61",
+          "chainName": "BNB Chain Testnet",
+          "rpcUrls": [
+            "https://data-seed-prebsc-1-s1.binance.org:8545",
+            "https://data-seed-prebsc-2-s1.binance.org:8545",
+            "https://data-seed-prebsc-1-s2.binance.org:8545"
+          ],
+          "nativeCurrency": {
+            "name": "BNB",
+            "symbol": "BNB",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://testnet.bscscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/binance.svg"
+    },
+    {
+      "id": "polygon",
+      "name": "Polygon",
+      "chain_id": 80001,
+      "provider_params": [
+        {
+          "chainId": "0x13881",
+          "chainName": "Polygon Mumbai",
+          "rpcUrls": [
+            "https://rpc.ankr.com/polygon_mumbai",
+            "https://polygon-mumbai.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+            "https://matic-mumbai.chainstacklabs.com"
+          ],
+          "nativeCurrency": {
+            "name": "Polygon",
+            "symbol": "MATIC",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://mumbai.polygonscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/polygon.svg"
+    },
+    {
+      "id": "avalanche",
+      "name": "Avalanche",
+      "chain_id": 43113,
+      "provider_params": [
+        {
+          "chainId": "0xa869",
+          "chainName": "Avalanche Fuji",
+          "rpcUrls": [
+            "https://rpc.ankr.com/avalanche_fuji",
+            "https://api.avax-test.network/ext/bc/C/rpc"
+          ],
+          "nativeCurrency": {
+            "name": "Avalanche",
+            "symbol": "AVAX",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://testnet.snowtrace.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/avalanche.svg"
+    },
+    {
+      "id": "fantom",
+      "name": "Fantom",
+      "chain_id": 4002,
+      "provider_params": [
+        {
+          "chainId": "0xfa2",
+          "chainName": "Fantom Testnet",
+          "rpcUrls": [
+            "https://rpc.ankr.com/fantom_testnet",
+            "https://rpc.testnet.fantom.network"
+          ],
+          "nativeCurrency": {
+            "name": "Fantom",
+            "symbol": "FTM",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://testnet.ftmscan.com"
+          ]
+        }
+      ],
+      "image": "/images/chains/fantom.svg"
+    },
+    {
+      "id": "moonbeam",
+      "name": "Moonbase",
+      "chain_id": 1287,
+      "provider_params": [
+        {
+          "chainId": "0x507",
+          "chainName": "Moonbase Alpha",
+          "rpcUrls": [
+            "https://rpc.api.moonbase.moonbeam.network",
+            "https://rpc.testnet.moonbeam.network",
+            "https://moonbase-alpha.public.blastapi.io"
+          ],
+          "nativeCurrency": {
+            "name": "Dev",
+            "symbol": "DEV",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://moonbase.moonscan.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/moonbase.png"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "chain_id": 1313161555,
+      "provider_params": [
+        {
+          "chainId": "0x4e454153",
+          "chainName": "Aurora Testnet",
+          "rpcUrls": [
+            "https://testnet.aurora.dev"
+          ],
+          "nativeCurrency": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://testnet.aurorascan.dev"
+          ]
+        }
+      ],
+      "image": "/images/chains/aurora.svg"
+    }
+  ],
+  "testnet-2": [
+    {
+      "id": "ethereum",
+      "name": "Ethereum Ropsten",
+      "chain_id": 3,
+      "provider_params": [
+        {
+          "chainId": "0x3",
+          "chainName": "Ethereum Ropsten",
+          "rpcUrls": [
+            "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+          ],
+          "nativeCurrency": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://ropsten.etherscan.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/ethereum.svg"
+    },
+    {
+      "id": "avalanche",
+      "name": "Avalanche",
+      "chain_id": 43113,
+      "provider_params": [
+        {
+          "chainId": "0xa869",
+          "chainName": "Avalanche Fuji",
+          "rpcUrls": [
+            "https://api.avax-test.network/ext/bc/C/rpc"
+          ],
+          "nativeCurrency": {
+            "name": "Avalanche",
+            "symbol": "AVAX",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://testnet.snowtrace.io"
+          ]
+        }
+      ],
+      "image": "/images/chains/avalanche.svg"
+    }
+  ]
+}
