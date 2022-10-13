@@ -20,6 +20,7 @@ import toast from "react-hot-toast";
 import { handleErrors } from "../../lib/fetch";
 import LineMdCircleToConfirmCircleTwotoneTransition from "../../components/icons/LineMdCircleToConfirmCircleTwotoneTransition";
 import CiExternalLink from "../../components/icons/CiExternalLink";
+import Decimal from "decimal.js";
 
 declare global {
   interface Window {
@@ -67,6 +68,7 @@ const Pay: NextPage = ({
       return;
     }
     if (!selectedChain || !selectedGateway || !selectedContract || !fee) return;
+    setLoading(true);
     try {
       const provider = new ethers.providers.Web3Provider(
         window.ethereum,
@@ -101,7 +103,7 @@ const Pay: NextPage = ({
       const tokenAddress = selectedContract.address;
       const srcErc20 = new Contract(tokenAddress, IERC20.abi, signer);
       const total = ethers.utils.parseUnits(
-        (payment.amount + fee).toString(),
+        new Decimal(payment.amount).plus(fee).toString(),
         6
       );
       await toast.promise(
@@ -152,6 +154,7 @@ const Pay: NextPage = ({
     } catch (e) {
       console.error(e);
     }
+    setLoading(false);
   };
 
   if (payment.payment_tx) {
@@ -291,7 +294,7 @@ const Pay: NextPage = ({
             <div className="font-semibold">
               Total:{" "}
               {formatValue({
-                value: (fee + payment.amount).toString(),
+                value: new Decimal(payment.amount).plus(fee).toString(),
                 prefix: selectedContract?.symbol + " ",
               })}
             </div>

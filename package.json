@@ -12,6 +12,7 @@
     "@axelar-network/axelarjs-sdk": "^0.11.4",
     "@fontsource/work-sans": "^4.5.10",
     "classnames": "^2.3.2",
+    "decimal.js": "^10.4.2",
     "ethers": "^5.7.1",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
